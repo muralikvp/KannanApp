@@ -18,4 +18,7 @@ export class CustomerService {
     let data = this.http.post(this.apiurl + '/add', customerData);
     return data;
   }
+  LoadCustomerbycode(id: number) {
+    return this.http.get(this.apiurl + '/' + id);
+  }
 }

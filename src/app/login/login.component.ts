@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,7 @@ import { AuthService } from '../auth.service';
 export class LoginComponent {
   responsedata: any;
 
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService, private route: Router) {}
 
   Login = new FormGroup({
     username: new FormControl('', [
@@ -27,7 +28,7 @@ export class LoginComponent {
         this.responsedata = data;
         localStorage.setItem('token', this.responsedata.token);
         localStorage.setItem('Role', 'Admin');
-        console.log('Sucess');
+        this.route.navigate(['create']);
       }
     });
 
