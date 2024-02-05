@@ -11,7 +11,9 @@ import { Router } from '@angular/router';
 export class LoginComponent {
   responsedata: any;
 
-  constructor(private authService: AuthService, private route: Router) {}
+  constructor(private authService: AuthService, private route: Router) {
+    localStorage.clear();
+  }
 
   Login = new FormGroup({
     username: new FormControl('', [
@@ -28,7 +30,7 @@ export class LoginComponent {
         this.responsedata = data;
         localStorage.setItem('token', this.responsedata.token);
         localStorage.setItem('Role', 'Admin');
-        this.route.navigate(['create']);
+        this.route.navigate(['customer']);
       }
     });
 
