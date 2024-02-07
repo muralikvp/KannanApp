@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class InBuiltDirectivesComponent {
   cardBoxStyle!: string;
 
+
   BackColrChanger(color:string)
   {
     if (color == 'Blue') {
@@ -17,6 +18,5 @@ export class InBuiltDirectivesComponent {
     } else if (color == 'Black') {
         this.cardBoxStyle = 'BlackBackground';
     }
-
   }
 }

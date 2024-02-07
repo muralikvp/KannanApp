@@ -14,6 +14,9 @@ import { CustomerComponent } from './customer/customer.component';
 import { ListingComponent } from './listing/listing.component';
 import { TokenInterceptor } from './Shared/token.interceptor';
 import { InBuiltDirectivesComponent } from './in-built-directives/in-built-directives.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { LowerPipe } from './shared/lower.pipe';
+import { ValidateAgePipe } from './shared/validate-age.pipe';
 
 
 @NgModule({
@@ -27,6 +30,9 @@ import { InBuiltDirectivesComponent } from './in-built-directives/in-built-direc
     CustomerComponent,
     ListingComponent,
     InBuiltDirectivesComponent,
+    PipesComponent,
+    LowerPipe,
+    ValidateAgePipe,
   ],
   imports: [
     AppRoutingModule,
