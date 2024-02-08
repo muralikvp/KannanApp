@@ -17,6 +17,8 @@ import { InBuiltDirectivesComponent } from './in-built-directives/in-built-direc
 import { PipesComponent } from './pipes/pipes.component';
 import { LowerPipe } from './shared/lower.pipe';
 import { ValidateAgePipe } from './shared/validate-age.pipe';
+import { TopLayerComponent } from './ContentProjection/top-layer/top-layer.component';
+import { BottomLayerComponent } from './ContentProjection/bottom-layer/bottom-layer.component';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { ValidateAgePipe } from './shared/validate-age.pipe';
     PipesComponent,
     LowerPipe,
     ValidateAgePipe,
+    TopLayerComponent,
+    BottomLayerComponent,
   ],
   imports: [
     AppRoutingModule,

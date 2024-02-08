@@ -9,6 +9,7 @@ import { CustomerComponent } from "./customer/customer.component";
 import { ListingComponent } from "./listing/listing.component";
 import { InBuiltDirectivesComponent } from "./in-built-directives/in-built-directives.component";
 import { PipesComponent } from "./pipes/pipes.component";
+import { TopLayerComponent } from "./ContentProjection/top-layer/top-layer.component";
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -25,7 +26,8 @@ const routes: Routes = [
       { path: 'create', component: AddnewComponent },
       { path: 'Edit/:id', component: AddnewComponent },
       { path: 'Directives', component: InBuiltDirectivesComponent },
-      {path: 'Pipes', component: PipesComponent}
+      { path: 'Pipes', component: PipesComponent },
+      { path: 'ContentProjection', component: TopLayerComponent },
     ],
     canActivate: [authGuard, roleGuard],
   },
