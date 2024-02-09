@@ -19,6 +19,9 @@ import { LowerPipe } from './shared/lower.pipe';
 import { ValidateAgePipe } from './shared/validate-age.pipe';
 import { TopLayerComponent } from './ContentProjection/top-layer/top-layer.component';
 import { BottomLayerComponent } from './ContentProjection/bottom-layer/bottom-layer.component';
+import { FirstCommunicationComponent } from './CompCommun/first/first.component';
+import { SecondCommunicationComponent } from './CompCommun/second/second.component';
+import { MajorBlockComponent } from './CompCommun/major-block/major-block.component';
 
 
 @NgModule({
@@ -37,6 +40,9 @@ import { BottomLayerComponent } from './ContentProjection/bottom-layer/bottom-la
     ValidateAgePipe,
     TopLayerComponent,
     BottomLayerComponent,
+    FirstCommunicationComponent,
+    SecondCommunicationComponent,
+    MajorBlockComponent
   ],
   imports: [
     AppRoutingModule,
