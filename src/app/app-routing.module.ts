@@ -12,6 +12,7 @@ import { PipesComponent } from "./pipes/pipes.component";
 import { TopLayerComponent } from "./ContentProjection/top-layer/top-layer.component";
 import { MajorBlockComponent } from "./CompCommun/major-block/major-block.component";
 import { UsersComponent } from "./rx-jstest/users/users.component";
+import { ParentComponent } from "./ParentChildCommunication/parent/parent.component";
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -30,7 +31,9 @@ const routes: Routes = [
       { path: 'Directives', component: InBuiltDirectivesComponent },
       { path: 'Pipes', component: PipesComponent },
       { path: 'ContentProjection', component: TopLayerComponent },
-      { path: 'ComponentCommunication', component: MajorBlockComponent },
+      { path: 'ServiceCommunication', component: MajorBlockComponent },
+      { path: 'ParentChildCommunication', component: ParentComponent },
+      { path: 'RXJSOperators', component: UsersComponent },
       {
         path: 'LazyLoading',
         loadChildren: () =>

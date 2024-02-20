@@ -22,6 +22,9 @@ import { BottomLayerComponent } from './ContentProjection/bottom-layer/bottom-la
 import { FirstCommunicationComponent } from './CompCommun/first/first.component';
 import { SecondCommunicationComponent } from './CompCommun/second/second.component';
 import { MajorBlockComponent } from './CompCommun/major-block/major-block.component';
+import { ParentComponent } from './ParentChildCommunication/parent/parent.component';
+import { ChildComponent } from './ParentChildCommunication/child/child.component';
+import { ObservableExComponent } from './observable-ex/observable-ex.component';
 
 
 @NgModule({
@@ -42,7 +45,10 @@ import { MajorBlockComponent } from './CompCommun/major-block/major-block.compon
     BottomLayerComponent,
     FirstCommunicationComponent,
     SecondCommunicationComponent,
-    MajorBlockComponent
+    MajorBlockComponent,
+    ParentComponent,
+    ChildComponent,
+    ObservableExComponent
   ],
   imports: [
     AppRoutingModule,
