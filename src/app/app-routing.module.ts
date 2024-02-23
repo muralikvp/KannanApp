@@ -13,6 +13,8 @@ import { TopLayerComponent } from "./ContentProjection/top-layer/top-layer.compo
 import { MajorBlockComponent } from "./CompCommun/major-block/major-block.component";
 import { UsersComponent } from "./rx-jstest/users/users.component";
 import { ParentComponent } from "./ParentChildCommunication/parent/parent.component";
+import { WebWorkerTestComponent } from "./WebWorker/web-worker-test/web-worker-test.component";
+import { DepEx1Component } from "./DependencyInjection/dep-ex1/dep-ex1.component";
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -34,6 +36,8 @@ const routes: Routes = [
       { path: 'ServiceCommunication', component: MajorBlockComponent },
       { path: 'ParentChildCommunication', component: ParentComponent },
       { path: 'RXJSOperators', component: UsersComponent },
+      { path: 'WebWorker', component: WebWorkerTestComponent },
+      { path: 'DependencyInjection', component: DepEx1Component },
       {
         path: 'LazyLoading',
         loadChildren: () =>

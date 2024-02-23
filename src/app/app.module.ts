@@ -25,6 +25,8 @@ import { MajorBlockComponent } from './CompCommun/major-block/major-block.compon
 import { ParentComponent } from './ParentChildCommunication/parent/parent.component';
 import { ChildComponent } from './ParentChildCommunication/child/child.component';
 import { ObservableExComponent } from './observable-ex/observable-ex.component';
+import { WebWorkerTestComponent } from './WebWorker/web-worker-test/web-worker-test.component';
+import { DepEx1Component } from './DependencyInjection/dep-ex1/dep-ex1.component';
 
 
 @NgModule({
@@ -48,7 +50,9 @@ import { ObservableExComponent } from './observable-ex/observable-ex.component';
     MajorBlockComponent,
     ParentComponent,
     ChildComponent,
-    ObservableExComponent
+    ObservableExComponent,
+    WebWorkerTestComponent,
+    DepEx1Component
   ],
   imports: [
     AppRoutingModule,
