@@ -13,7 +13,7 @@ export class AppComponent {
   constructor(private route: Router) {}
 
   ngDoCheck(): void {
-    if (this.route.url == '/login') {
+    if (this.route.url == '/login' || this.route.url == '/') {
       this.displaymenu = false;
     } else {
       this.displaymenu = true;

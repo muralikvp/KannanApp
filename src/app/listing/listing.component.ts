@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CustomerService } from '../Shared/customer.service';
 
 @Component({
@@ -6,9 +6,13 @@ import { CustomerService } from '../Shared/customer.service';
   templateUrl: './listing.component.html',
   styleUrls: ['./listing.component.css'],
 })
-export class ListingComponent {
+export class ListingComponent implements OnInit {
   public Customerdata: any;
+
   constructor(private service: CustomerService) {
+  }
+
+  ngOnInit(): void{
     this.LoadCustomerData();
   }
 
